@@ -12,6 +12,8 @@ requests = "^2.32.3"
 psycopg2 = "^2.9.9"
 sqlalchemy = "^2.0.32"
 alembic = "^1.13.2"
+undetected-chromedriver = "^3.5.5"
+setuptools = "^74.0.0"
 
 
 [build-system]
