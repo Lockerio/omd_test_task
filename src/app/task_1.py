@@ -48,6 +48,10 @@ class DetmirParser:
         block_4 = self.parse_block(element_4, 4)
         data.extend(block_4)
 
+        web_block_5 = WebDriverWait(self.driver, 10).until(
+            EC.presence_of_all_elements_located((By.CSS_SELECTOR, self.blocks_5_css_selector))
+        )
+
         return data
 
     def parse_block(self, elements: list[WebElement], place: int) -> dict[str, Any]:
@@ -68,7 +72,6 @@ class DetmirParser:
                 "position": i + 1
             })
         return data
-
 
 
 if __name__ == "__main__":
