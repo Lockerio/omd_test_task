@@ -24,7 +24,7 @@ def upgrade():
         sa.Column('id', sa.Integer(), autoincrement=True, nullable=False),
         sa.Column('image_url', sa.String(), nullable=False),
         sa.Column('content_url', sa.String(), nullable=False),
-        sa.Column('meta', sa.String(), nullable=False),
+        sa.Column('meta', sa.String()),
         sa.Column('place', sa.Integer(), nullable=False),
         sa.Column('position', sa.Integer(), nullable=False),
         sa.PrimaryKeyConstraint('id')

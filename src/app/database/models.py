@@ -9,7 +9,7 @@ class DetMir(Base):
     id = Column(Integer(), primary_key=True, nullable=False, autoincrement=True)
     image_url = Column(String(), nullable=False)
     content_url = Column(String(), nullable=False)
-    meta = Column(String(), nullable=False)
+    meta = Column(String())
     place = Column(Integer(), nullable=False)
     position = Column(Integer(), nullable=False)
 
