@@ -33,17 +33,17 @@ def upgrade():
     op.create_table(
         'product',
         sa.Column('id', sa.Integer(), autoincrement=True, nullable=False),
-        sa.Column('name', sa.String(), nullable=False),
-        sa.Column('price', sa.Float(), nullable=False),
-        sa.Column('price_sale', sa.Float(), nullable=False),
-        sa.Column('description', sa.String(), nullable=False),
-        sa.Column('code', sa.String(), nullable=False),
-        sa.Column('images', sa.String(), nullable=False),
-        sa.Column('comment_count', sa.Integer(), nullable=False),
-        sa.Column('rating', sa.Float(), nullable=False),
-        sa.Column('brand', sa.String(), nullable=False),
-        sa.Column('categories', sa.String(), nullable=False),
-        sa.Column('content_url', sa.String(), nullable=False),
+        sa.Column('name', sa.String()),
+        sa.Column('price', sa.Float()),
+        sa.Column('price_sale', sa.Float()),
+        sa.Column('description', sa.String()),
+        sa.Column('code', sa.String()),
+        sa.Column('images', sa.String()),
+        sa.Column('comment_count', sa.Integer()),
+        sa.Column('rating', sa.Float()),
+        sa.Column('brand', sa.String()),
+        sa.Column('categories', sa.String()),
+        sa.Column('content_url', sa.String()),
         sa.PrimaryKeyConstraint('id')
     )
 
