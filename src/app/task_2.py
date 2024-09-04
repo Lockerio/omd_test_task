@@ -13,5 +13,5 @@ if __name__ == "__main__":
     db_json_res = PerecrestokFormatter.json_to_db_json(json_res)
 
     product_service.create(db_json_res)
-    with open("data2.json", "w", encoding="utf-8") as json_file:
+    with open("Product.json", "w", encoding="utf-8") as json_file:
         json.dump(json_res, json_file, ensure_ascii=False, indent=4)

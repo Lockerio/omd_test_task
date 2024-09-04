@@ -10,5 +10,5 @@ if __name__ == "__main__":
 
     for element in res:
         detmir_service.create(element)
-    with open("data.json", "w", encoding="utf-8") as json_file:
+    with open("DetMir.json", "w", encoding="utf-8") as json_file:
         json.dump(res, json_file, ensure_ascii=False, indent=4)
