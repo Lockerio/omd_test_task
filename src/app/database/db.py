@@ -3,6 +3,5 @@ from sqlalchemy.orm import declarative_base
 
 from app.config import DB_URL
 
-# engine = db.create_engine(DB_URL)
-engine = db.create_engine("postgresql://postgres:487362@localhost:5432/parsing")
+engine = db.create_engine(DB_URL)
 Base = declarative_base()

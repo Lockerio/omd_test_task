@@ -5,7 +5,6 @@ class PerecrestokFormatter:
     @staticmethod
     def src_json_to_output_json(src_data: dict[str, Any]) -> dict[str, Any]:
         src_data = src_data["content"]
-
         if src_data["priceTag"]["grossPrice"]:
             price = src_data["priceTag"]["price"] / 100
             gross_price = src_data["priceTag"]["grossPrice"] / 100

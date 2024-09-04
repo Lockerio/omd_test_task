@@ -9,6 +9,7 @@ if __name__ == "__main__":
 
     perecrestok_parser = PerecrestokParser()
     src_res = perecrestok_parser.get_product_data(url)
+    print(src_res)
     json_res = PerecrestokFormatter.src_json_to_output_json(src_res)
     db_json_res = PerecrestokFormatter.json_to_db_json(json_res)
 

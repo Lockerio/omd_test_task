@@ -12,7 +12,16 @@ from selenium.webdriver.support import expected_conditions as EC
 class DetmirParser:
     def __init__(self):
         self.url = "https://www.detmir.ru/"
-        self.driver = undetected_chromedriver.Chrome()
+
+        options = undetected_chromedriver.ChromeOptions()
+        options.add_argument("--headless")
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
+        options.add_argument("--disable-gpu")
+        options.add_argument("--window-size=1920,1080")
+        options.add_argument("--start-maximized")
+        options.binary_location = "/usr/bin/google-chrome"
+        self.driver = undetected_chromedriver.Chrome(options=options)
 
         self.blocks_1_css_selector = ".tO.tV.bNf.t_"
         self.blocks_2_css_selector = ".tO.tV.bM_1.t_"
