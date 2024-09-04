@@ -1,12 +1,14 @@
 import json
-from pprint import pprint
 
+from app.database.container import detmir_service
 from app.parsers.detmir_parser import DetmirParser
-from app.scripts.save_detmir_to_db import save_detmir_to_db
+
 
 if __name__ == "__main__":
     detmir_parser = DetmirParser()
     res = detmir_parser.get_detmir_data()
-    json.dumps(res, indent=4)
-    save_detmir_to_db(res)
-    pprint(res)
+
+    for element in res:
+        detmir_service.create(element)
+    with open("data.json", "w", encoding="utf-8") as json_file:
+        json.dump(res, json_file, ensure_ascii=False, indent=4)
