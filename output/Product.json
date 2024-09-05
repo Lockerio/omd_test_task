@@ -1,0 +1,32 @@
+{
+    "name": "Сырники без сахара запечённые Зелёная Линия, 200г",
+    "price": 249.99,
+    "price_sale": null,
+    "description": null,
+    "code": "4318836",
+    "images": [
+        {
+            "image_url": "https://cdn-img.perekrestok.ru/i/%s/xdelivery/files/17/70/cd099e29b516d9afe45d6f0db57d.jpg"
+        },
+        {
+            "image_url": "https://cdn-img.perekrestok.ru/i/%s/xdelivery/files/0b/a9/66319a91aba0fbf9094d5bf64758.jpg"
+        },
+        {
+            "image_url": "https://cdn-img.perekrestok.ru/i/%s/xdelivery/files/1b/18/9df04466f326578b2f2646811c8b.jpg"
+        },
+        {
+            "image_url": "https://cdn-img.perekrestok.ru/i/%s/xdelivery/files/1d/b8/fd6e5b847fa2615b3a0ab2b17d76.jpg"
+        },
+        {
+            "image_url": "https://cdn-img.perekrestok.ru/i/%s/xdelivery/files/14/cc/c06bf5cbf83970d22d96dc0e04f5.jpg"
+        }
+    ],
+    "comment_count": 164,
+    "rating": 4.83,
+    "brand": "Зелёная Линия",
+    "categories": [
+        "Завтрак",
+        "Основное меню"
+    ],
+    "content_url": "https://www.perekrestok.ru/cat/27/p/syrniki-bez-sahara-zapecennye-zelenaa-linia-200g-4318836"
+}
