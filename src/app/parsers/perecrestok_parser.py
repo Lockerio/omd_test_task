@@ -1,3 +1,5 @@
+from typing import Any
+
 import requests
 
 
@@ -19,6 +21,6 @@ class PerecrestokParser:
             "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 OPR/113.0.0.0"
         }
 
-    def get_product_data(self, url):
+    def get_product_data(self, url) -> Any:
         response = requests.get(url, headers=self.headers)
         return response.json()
